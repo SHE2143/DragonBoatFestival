@@ -1,0 +1,7 @@
+clash本地开系统代理，socks7897
+开终端输入ssh -ND 20000 -p 10856 root@connect.nmb1.seetacloud.com和密码，建立隧道
+新开终端输入ssh -R 20000:localhost:7897 -p 10856 root@connect.nmb1.seetacloud.com和密码跳出界面算成功，两者不要关，用作映射。
+服务器输入export http_proxy="socks5h://localhost:20000"确定协议地址。
+服务器输入export https_proxy="socks5h://localhost:20000"确定协议地址。
+谷歌检验curl -v --socks5-hostname localhost:20000 https://www.google.com
+
