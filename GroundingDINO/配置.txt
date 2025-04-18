@@ -5,3 +5,6 @@ clash本地开系统代理，socks7897
 服务器输入export https_proxy="socks5h://localhost:20000"确定协议地址。
 谷歌检验curl -v --socks5-hostname localhost:20000 https://www.google.com
 
+
+swinb：https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha2/groundingdino_swinb_cogcoor.pth
+
